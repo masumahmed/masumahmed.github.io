@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+    <html>
+    <title>Sketch Music</title>
+    <meta name="theme-color" content="#1F2226">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <div id="nav" class="sticky">
+        <a href="#top">Home</a>
+        <a href="#music-anchor">Music</a>
+        <a href="#social-anchor">Social</a>
+        <a href="#contact-anchor">Contact</a>
+    </div>
+    <div id="carousel">
+        <img src="img/image1.png"></img>
+        <h1>
+            I write so nobody has to ever feel as alone as I once was
+        </h1>
+    </div>
+    <div id="music">
+        <a class="anchor" id="music-anchor"></a>
+        <iframe width="100%" height="500" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/340909656&color=%2331568c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+    </div>
+    <div id="social">
+        <a class="anchor" id="social-anchor"></a>
+        <section class="Instacontainer" id="scroll">
+            <ul id="instafeed"></ul>
+        </section>
+        <h1>follow me</h1>
+        <center>
+            <ul id="socialMedia">
+                <li><a href="https://open.spotify.com/artist/3Bn1vrCtsMi9JDKYweNZug" target="_blank"><img
+                            src="logo/spotify.png"></a></li>
+                <li><a href="https://music.apple.com/us/album/kaioken-single/1451679204" target="_blank"><img
+                            src="logo/apple_music.png"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCpPaFhhbeHeMRXfD2Vje8tA" target="_blank"><img
+                            src="logo/youtube-symbol.png"></a></li>
+                <li><a href="https://www.twitch.tv/shinobiseb" target="_blank"><img src="logo/twitch.png"></a></li>
+                <li><a href="https://www.twitter.com/shinobiseb" target="_blank"><img
+                            src="logo/twitter-logo-button.png"></a></li>
+                <li><a href="https://www.instagram.com/sketchtheconductor" target="_blank"><img
+                            src="logo/instagram-logo.png"></a></li>
+
+            </ul>
+        </center>
+    </div>
+    <div id="contact">
+        <a class="anchor" id="contact-anchor"></a>
+        <div id="captchacontainer">
+            <h1>reach out to me through email</h1>
+            <input class="button" style="width: 280px;" type="text" value="thekindredsketch@gmail.com" id="myInput">
+            <button class="button" onclick="copy()">Copy</button>
+        </div>
+    </div>
+    <div id="footer">
+        <a class="anchor" id="footer-anchor"></a>
+        <p>All Rights Reserved |</p>
+        <p id="year"></p>
+        <script>
+            var d = new Date();
+            document.getElementById("year").innerHTML = "© 2018 - " + d.getFullYear() + " |";
+        </script>
+        <a href="copyright.txt">Copyright Notice</a>
+        <p>|</p>
+        <a href="terms.txt">Terms & Conditions</a>
+        <p>|</p>
+        <a href="privacy.txt">Privacy Policy</a>
+        <p></p>
+    </div>
+    <div id="snackbar">Copied</div>
+    <!--loaded scripts below-->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</body>
+
+</html>

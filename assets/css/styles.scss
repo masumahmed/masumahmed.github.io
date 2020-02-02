@@ -1,0 +1,340 @@
+/*general rules*/
+
+:root {
+    /*--main-bg-color: #575E77;*/
+    /*--accent-color: #262935;*/
+    /*--neutral-color: #EEEEEE;*/
+    /*--main-bg-color: #D55151;*/
+    /*--accent-color: #000000;*/
+    /*--neutral-color: #272727;*/
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
+
+html {
+    background: var(--neutral-color) !important;
+    min-height: 100%;
+    color: white;
+}
+
+body {
+    background: var(--neutral-color) !important;
+    min-height: 100%;
+    color: white;
+    margin: 0 auto;
+}
+
+.button {
+    color: lightgrey;
+    border-width: 3px;
+    border-color: var(--main-bg-color);
+    border-style: solid;
+    background: none;
+    padding: 10px;
+    display: inline-block;
+    margin: 0 15px 15px 15px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+
+    &:hover {
+        background-color: var(--main-bg-color);
+        border-color: var(--neutral-color);
+        transition: 0.5s;
+    }
+}
+
+/*header section*/
+
+#header {
+    background-color: var(--main-bg-color);
+    height: 80px;
+
+    img {
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+    }
+}
+
+/*navbar section*/
+
+#nav {
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+
+    ul {
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 0;
+        overflow: hidden;
+        background-color: var(--accent-color);
+
+        li {
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+
+            a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-family: 'Open Sans', sans-serif;
+
+                &:hover {
+                    background-color: #555;
+                    transition: 0.5s;
+                }
+
+                &.selected {
+                    background-color: #555;
+                }
+            }
+        }
+    }
+}
+
+.active a {
+    background-color: #FC6C2D !important;
+
+    &:hover {
+        background-color: #FC4236 !important;
+    }
+}
+
+/*carousel section*/
+
+#carousel {
+    background-color: var(--neutral-color);
+    padding-top: 15px;
+}
+
+.carousel-inner,
+.carousel-control {
+    border-radius: 2px;
+}
+
+/*content section*/
+
+.content {
+    background-color: var(--neutral-color);
+    padding: 0 15px 0 15px;
+    min-height: 100%;
+
+    .con {
+        background-color: var(--accent-color);
+        height: 100%;
+        margin: 20px auto;
+        border-radius: 2px;
+
+        p {
+            color: lightgrey;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+            font-weight: lighter;
+            padding: 10px 20px 10px 20px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .content .con {
+        width: 1140px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .content .con {
+        width: 940px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .content .con {
+        width: 720px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .content .con {
+        width: 100%;
+    }
+}
+
+.con {
+
+    h1,
+    h2,
+    h3 {
+        color: lightgrey;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: lighter;
+        padding: 10px 20px 10px 20px;
+        margin: 0 auto;
+    }
+}
+
+h2,
+center {
+    border-top: solid;
+    border-color: var(--main-bg-color);
+    padding: 15px;
+}
+
+.con ul li {
+    color: lightgrey;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 20px 10px 20px;
+}
+
+#letterh1 {
+    text-align: center;
+    border-bottom: solid;
+    border-color: var(--main-bg-color);
+}
+
+.con {
+    .project-thumbnail {
+        height: auto;
+        max-height: 450px;
+        width: 100%;
+        max-width: 450px;
+        object-fit: cover;
+        overflow: hidden;
+        display: inline;
+        padding: 15px;
+        border-radius: 2px;
+    }
+
+    /*contact page*/
+    #pfp {
+        height: auto;
+        max-height: 550px;
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        display: block;
+        margin: 0 auto;
+        padding: 15px;
+        border-radius: 2px;
+    }
+}
+
+/*footer section*/
+#footer-container {
+    background: var(--neutral-color);
+    bottom: 0;
+    width: 100%;
+}
+
+#footer {
+    background-color: var(--main-bg-color);
+
+    a {
+        text-decoration: underline;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+
+        &:hover {
+            text-decoration: underline;
+            color: lightgrey;
+            transition: 0.5s;
+        }
+    }
+
+    ul {
+        margin-bottom: 0;
+        padding: 40px;
+        display: inline-block;
+
+        img {
+            height: 32px;
+        }
+
+        li {
+            list-style: none;
+            padding: 5px;
+            color: white;
+            display: inline;
+            font-size: 16px;
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: var(--accent-color);
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+
+    &.show {
+        visibility: visible;
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
