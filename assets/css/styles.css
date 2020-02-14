@@ -1,5 +1,11 @@
 /*general rules*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap");
+:root {
+  --main-bg-color: #D55151;
+  --accent-color: #141414;
+  --neutral-color: #000000;
+}
+
 html {
   background: var(--neutral-color) !important;
   min-height: 100%;
