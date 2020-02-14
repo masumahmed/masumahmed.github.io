@@ -27,8 +27,8 @@ window.onload = function loadTheme() {
   }
   if(getCookie("theme") == "dark") {
     $(":root").css("--main-bg-color", "#D55151");
-    $(":root").css("--accent-color", "#000000");
-    $(":root").css("--neutral-color", "#272727");
+    $(":root").css("--accent-color", "#141414");
+    $(":root").css("--neutral-color", "#000000");
   }
   else if (getCookie("theme") == "light") {
     $(":root").css("--main-bg-color", "#575E77");
@@ -47,8 +47,8 @@ function themeChange() {
   }
   else if(getCookie("theme") == "light") {
     $(":root").css("--main-bg-color", "#D55151");
-    $(":root").css("--accent-color", "#000000");
-    $(":root").css("--neutral-color", "#272727");
+    $(":root").css("--accent-color", "#141414");
+    $(":root").css("--neutral-color", "#000000");
     document.cookie = "theme=dark";
   }
 }

@@ -1,11 +1,5 @@
 /*general rules*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap");
-:root {
-  --main-bg-color: #D55151;
-  --accent-color: #000000;
-  --neutral-color: #272727;
-}
-
 html {
   background: var(--neutral-color) !important;
   min-height: 100%;
@@ -131,7 +125,6 @@ body {
   color: lightgrey;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
-  font-weight: lighter;
   padding: 10px 20px 10px 20px;
 }
 
@@ -164,7 +157,6 @@ body {
 .con h3 {
   color: lightgrey;
   font-family: 'Open Sans', sans-serif;
-  font-weight: lighter;
   padding: 10px 20px 10px 20px;
   margin: 0 auto;
 }
