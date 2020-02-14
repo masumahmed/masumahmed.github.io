@@ -112,6 +112,12 @@ body {
 #carousel {
     background-color: var(--neutral-color);
     padding-top: 15px;
+
+    img {
+        width: 965px;
+        height: 420px;
+        object-fit: cover;
+    }
 }
 
 .carousel-inner,
