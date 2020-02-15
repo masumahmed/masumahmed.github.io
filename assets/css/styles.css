@@ -42,7 +42,7 @@ body {
 /*header section*/
 #header {
   background-color: var(--main-bg-color);
-  height: 80px;
+  height: 60px;
 }
 
 #header img {
