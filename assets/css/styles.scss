@@ -138,6 +138,24 @@ body {
         margin: 20px auto;
         border-radius: 2px;
 
+        .imgcon {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: .5rem 0;
+            align-content: stretch;
+        }
+
+        img {
+            margin: .75rem;
+            width: 26.75rem;
+            height: 35rem;
+            object-fit: cover;
+            object-position: center;
+            justify-content: space-evenly;
+            align-content: flex-start;
+        }
+
         p {
             color: lightgrey;
             font-family: 'Open Sans', sans-serif;

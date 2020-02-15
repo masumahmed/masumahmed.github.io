@@ -134,6 +134,35 @@ body {
   border-radius: 2px;
 }
 
+.content .con .imgcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: .5rem 0;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+}
+
+.content .con img {
+  margin: .75rem;
+  width: 26.75rem;
+  height: 35rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
 .content .con p {
   color: lightgrey;
   font-family: 'Open Sans', sans-serif;
