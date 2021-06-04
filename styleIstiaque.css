@@ -12,7 +12,12 @@ li {
 div.gallery {
   margin: 5px;
   float: left;
-  width: 500px;
+  border-style: solid;
+  border-color: white;
+  margin-left: 600px;
+  width: 400px;
+  border-width: 11px;
+  height: 100%;
 }
 
 div.gallery img {
@@ -31,7 +36,7 @@ li a:hover {
 }
 body{
   font-family: OCR A Std, monospace;
-  background-color: rgb(42, 124, 53);
+  background-color: #ffdc40;
   text-align: center;
 }
 h1{
@@ -50,7 +55,6 @@ a{
 #panda
 {
   object-fit: contain;
-  margin-left: 600px;
   background-repeat: no-repeat;
   background-size: contain;
   width: 400px;
