@@ -7,5 +7,5 @@
     Stephanie Bravo (stephanieb00) 
 
 ## GitHub Pages Link:
-    [https://masumahmed.github.io](https://masumahmed.github.io)
+    https://masumahmed.github.io
     
