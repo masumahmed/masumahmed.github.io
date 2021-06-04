@@ -1,0 +1,227 @@
+
+/*navbar*/
+#inputs 
+{
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  transition: .6s;
+}
+  
+#inputs:hover 
+{
+  height: 165px;
+  width: 65px;
+}
+
+#btn1 
+{
+  position: absolute;
+  top: 0px;
+  background: transparent;
+  width: 80px;
+  color: transparent;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  border: 2.5px solid transparent;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .6s;
+}
+
+#inputs:hover>#btn1 
+{
+  top: 55px;
+  left: -10px;
+  color: rgb(88, 144, 230);
+  padding-bottom: 2px;
+}
+
+#btn2 
+{
+  position: absolute;
+  top: 0px;
+  background: transparent;
+  width: 80px;
+  color: transparent;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  border: 2.5px solid transparent;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .6s;
+}
+
+#inputs:hover>#btn2 
+{
+  top: 85px;
+  left: -10px;
+  color: rgb(88, 144, 230);
+  padding-bottom: 5px;
+}
+
+#btn3 
+{
+  position: absolute;
+  top: 0px;
+  background: transparent;
+  width: 80px;
+  color: transparent;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  border: 2.5px solid transparent;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .6s;
+}
+
+#inputs:hover>#btn3 
+{
+  top: 115px;
+  left: -10px;
+  color: rgb(88, 144, 230);
+  padding-bottom: 15px;
+}
+
+/*end navbar*/
+
+/*Background*/
+
+body
+{
+  font-family: Garamond, serif;
+  background-color: blanchedalmond;
+  min-width: 1000px;
+  width: auto;
+}
+
+/*end of Background*/
+
+/*Page Content: Fonts, Font sizes, text color*/
+h1
+{
+  text-align: center;
+  text-decoration: none;
+  color: cornflowerblue;
+  font-size: 70px;
+  font-family: 'Cinzel', serif;
+}
+
+h3
+{
+  text-align: left;
+  text-decoration: none;
+  color: rgb(133, 156, 197);
+  margin-top: 30px;
+  font-size: 30px;
+  font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+} 
+
+a
+{
+  text-align: center;
+  text-decoration: none;
+  color: rgb(133, 156, 197);
+  padding: 10px;
+}
+/*End of Page Content*/
+
+/*Images and Icons*/
+
+img 
+{
+  border-radius: 20%;
+  max-width: 100%;
+  height: auto;
+}
+
+#home
+{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  width: 60px;
+  height: 60px;
+  transition: .6s;
+}
+
+#home:hover
+{
+  width: 65px;
+  height: 65px;
+}
+
+#image
+{
+  object-fit: contain;
+  margin-left: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 100%;
+}
+
+/*end of Images and Icons*/
+
+/*Favorite information and images*/
+
+.content-container 
+{
+  width: 100%;
+  height: 80%;
+  display: flex;
+}
+.info-container 
+{
+  border-radius: 10%;
+  float: right;
+  width: 30%;
+  margin-left: 5em;
+  text-align: left;
+  justify-content: middle;
+  font-family: avocado;
+  padding-left: 20px;
+  background-color: rgb(216, 207, 192);
+}
+
+/*End of Favorite information and images*/
+
+/*Social Media Container*/
+
+.socialMedia-container
+{
+  position: absolute;
+  right: 120px;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+#linkedin, #email, #instagram
+{
+  padding: 10px;
+}
+#linkedin:hover, #email:hover, #instagram:hover
+{
+  padding: 10px;
+}
+/*End of Social Media Container*/
+
+/*Credit section that goes at the bottom*/
+.credit
+{
+  position: fixed;     
+  text-align: center;    
+  bottom: 0px; 
+  width: 100%;
+}

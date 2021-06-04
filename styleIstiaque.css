@@ -1,0 +1,68 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+div.gallery {
+  margin: 5px;
+  float: left;
+  width: 500px;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}  
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+body{
+  font-family: OCR A Std, monospace;
+  background-color: rgb(42, 124, 53);
+  text-align: center;
+}
+h1{
+  text-align: center;
+  color: rgb(11, 13, 14);
+  font-family: OCR A Std, monospace;
+  font-size: 69px
+}
+
+a{
+  text-decoration: none;
+  color: rgb(11, 13, 14);
+  padding: 10px;
+  text-align: center;
+}
+#panda
+{
+  object-fit: contain;
+  margin-left: 600px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 100%;
+}
+.actives
+{
+  position: absolute;
+  left: 0px;
+  width: 100px;
+  height: 0px;
+  padding: 0px;
+  margin-top: 0px;
+  line-height: 200%;
+}

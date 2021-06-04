@@ -1,0 +1,126 @@
+/*general rules*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap");
+:root {
+  --main-bg-color: #d55151;
+  --accent-color: #141414;
+  --neutral-color: #ffffff;
+}
+
+html {
+  background: var(--neutral-color) !important;
+  min-height: 100%;
+  color: white;
+}
+
+body {
+  background: var(--neutral-color) !important;
+  min-height: 100%;
+  color: white;
+  margin: 0 auto;
+}
+
+.button {
+  color: lightgrey;
+  border-width: 3px;
+  border-color: var(--main-bg-color);
+  border-style: solid;
+  background: none;
+  padding: 10px;
+  display: inline-block;
+  margin: 0 15px 15px 15px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.button:hover {
+  background-color: var(--main-bg-color);
+  border-color: var(--neutral-color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.carousel-inner img {
+  height: 100vh;
+}
+/*header section*/
+#header {
+  background-color: var(--main-bg-color);
+  height: 80px;
+}
+
+#header img {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+/*navbar section*/
+#nav {
+  z-index: 1;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#nav ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--accent-color);
+}
+
+#nav ul li {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+#nav ul li a:hover {
+  background-color: #555;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#nav ul li a.selected {
+  background-color: #555;
+}
+
+.active a {
+  background-color: #fc6c2d !important;
+}
+
+.active a:hover {
+  background-color: #fc4236 !important;
+}
+
+.carousel-inner img {
+  height: auto;
+  min-height: 500px;
+  object-fit: cover;
+}
+
+#content-page {
+  margin: 50px;
+  text-align: justify;
+  /* display: flexbox;
+  flex-flow: row; */
+}
+#content-page > *{
+  padding: 10px;
+}

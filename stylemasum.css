@@ -1,0 +1,49 @@
+body {
+  color: black;
+  background-color: pink;
+}
+
+#id {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 100px;
+}
+
+#nav ul,
+#nav a {
+  list-style: none;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  display: inline-flex;
+  color: white;
+}
+
+#nav a {
+  margin: 10px;
+  background-color: rgb(172, 124, 132);
+  padding: 5px;
+}
+
+#nav a:hover {
+  color: purple;
+}
+
+#content {
+  margin: 0 auto;
+  margin-top: 50px;
+  display: inline-flex;
+}
+
+#content img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 400px;
+  width: 400px;
+  padding-top: 20px;
+}
+
+#text {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 40px;
+  margin: 20px;
+}
