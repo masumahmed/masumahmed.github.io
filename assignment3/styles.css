@@ -1,0 +1,46 @@
+body {
+  background-color: #272727 !important;
+}
+
+button {
+  margin: 5px !important;
+}
+
+span {
+  font-size: 20px;
+  margin: 5px 10px;
+  color: white;
+}
+
+#tableContainer {
+  overflow-x: scroll;
+}
+
+table {
+  margin: 0 5px;
+}
+
+table td {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  border: medium solid black;
+  /* margin: 10px; */
+}
+
+.Red {
+  background-color: #e97272 !important;
+}
+
+.Green {
+  background-color: #7bd47b !important;
+}
+
+.Blue {
+  background-color: #5e5ef5 !important;
+}
+
+.Yellow {
+  background-color: #e9e96d !important;
+}
+/*# sourceMappingURL=styles.css.map */

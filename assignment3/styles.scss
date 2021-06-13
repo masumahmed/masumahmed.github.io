@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(39, 39, 39) !important;
+}
+
+button {
+    margin: 5px !important;
+}
+
+span {
+    font-size: 20px;
+    margin: 5px 10px;
+    color: white;
+}
+
+table {
+    margin: 0 5px;
+
+    td {
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        border: medium solid black;
+        /* margin: 10px; */
+    }
+}
+
+.Red {
+    background-color: rgb(233, 114, 114) !important;
+}
+
+.Green {
+    background-color: rgb(123, 212, 123) !important;
+}
+
+.Blue {
+    background-color: rgb(94, 94, 245) !important;
+}
+
+.Yellow {
+    background-color: rgb(233, 233, 109) !important;
+}
