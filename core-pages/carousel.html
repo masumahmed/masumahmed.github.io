@@ -1,0 +1,16 @@
+<div id="carousel">
+    <p id="carouselWord"></p>
+</div>
+
+<script>
+    let i = 0;
+    let text = ["Web Programmer", "Game Developer", "Data Science", "ML Enthusiast"];
+
+    var day = new Date();
+    function changeSpeech() {
+        i >= text.length - 1 ? i = 0 : i++;
+        document.querySelector("#carouselWord").innerHTML = text[i];
+        setTimeout(function () { changeSpeech() }, 700);
+    }
+    changeSpeech();
+</script>

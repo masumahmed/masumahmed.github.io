@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Masum Ahmed - Contact</title>
+
+    <meta name="theme-color" content="#1F2225">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="assets/img/android_icon_36x36_q1r_icon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+
+    <script defer type="text/javascript" src="assets/js/script.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script defer type="text/javascript" src="assets/js/appendHTML.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("Nt13v32IIAFOtpgax");
+        })();
+
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+
+                if (this.user_name.value == "") {
+                    alert("Please enter your name");
+                    return;
+                }
+                if (this.user_email.value == "") {
+                    alert("Please enter your email");
+                    return;
+                }
+                if (this.message.value == "") {
+                    alert("Please enter your message");
+                    return;
+                }
+
+                emailjs.sendForm('service_6cb85cy', 'template_i422dls', this)
+                    .then(function () {
+                        console.log('SUCCESS!');
+                        var x = document.getElementById("snackbar");
+                        x.className = "show";
+                        setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+                        document.querySelectorAll("input")[1].value = "";
+                        document.querySelectorAll("input")[2].value = "";
+                        document.querySelector("textarea").value = "";
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div id="bodyWrapper">
+        <div id="header-placeholder"></div>
+        <div class="content">
+            <div class="con">
+                <img id="pfp" src="assets/img/Screen Shot 2022-09-23 at 1.16.16 AM.png" alt="picture of me"></img>
+                <h1>Contact Form</h1>
+                <div id="formContainer" style="width: 355px;">
+                    <form id="contact-form">
+                        <input class="button" type="hidden" name="contact_number">
+                        <input class="button" type="text" name="user_name" placeholder="name" style="width: 100%;">
+                        <br>
+                        <input class="button" type="email" name="user_email" placeholder="email" style="width: 100%;">
+                        <br>
+                        <textarea class="button" name="message" placeholder="message"  style="width: 100%;"></textarea>
+                        <br>
+                        <input class="button" type="submit" value="Send">
+                    </form>
+                </div>
+
+                <h1>Links</h1>
+                <a href="https://github.com/masumahmed" target="_blank">
+                    <div class="button">Github</div>
+                </a>
+                <a href="https://linkedin.com/in/masum-ahmed" target="_blank">
+                    <div class="button">Linkedin</div>
+                </a>
+                <a href="https://medium.com/@masum.ahmed" target="_blank">
+                    <div class="button">Medium</div>
+                </a>
+                <a href="/resume.pdf" target="_blank">
+                    <div class="button">Résumé</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="footer-placeholder"></div>
+    <div id="snackbar">Sent</div>
+</body>
+
+</html>

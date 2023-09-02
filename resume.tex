@@ -1,0 +1,226 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2021 Jitin Nair
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+
+% article class because we want to fully customize the page and not use a cv template
+\documentclass[letterpaper,10pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip} 	
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+
+
+%debug page outer frames
+%\usepackage{showframe}
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Masum Ahmed} \\[9pt]
+
+\href{https://github.com/masumahmed}{\raisebox{-0.05\height}\faGithub\ masumahmed} \ $|$ \ 
+\href{https://linkedin.com/in/masum-ahmed}{\raisebox{-0.05\height}\faLinkedin\ masum-ahmed} \ $|$ \ 
+\href{https://masumahmed.github.io}{\raisebox{-0.05\height}\faGlobe \ masumahmed.net} \ $|$ \ 
+\href{mailto:pm@masumahmed.net}{\raisebox{-0.05\height}\faEnvelope \ pm@masumahmed.net} \ $|$\ 
+\href{tel:+15168176072}{\raisebox{-0.05\height}\faPhone \ +15168176072} \\ 
+\end{tabularx}
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+%Interests/ Keywords/ Summary
+\section{summary}
+A computer science graduate and software programmer, Masum is interested in gaining meaningful employment and experience in fullstack web development or data science. Masum is a self-described programming enthusiast that is passionate about the industry and how technology can be used to automate processes, create impactful services and gain insight about ourselves.
+%Experience
+\section{professional}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{All Star Code} & \hfill Jun 2019 - Aug 2019 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=0pt]
+        \item[--] Led lectures and directed instruction in a clear and engaging manner while maintaining student attention
+        \item[--] Provided one-on-one assistance to students by rearticulating concepts and resolving misunderstandings
+        \item[--] Revised curriculum to better match cohort synergy with the learning material and student pacing
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Macquarie Group} & \hfill July 2016 - Aug 2016 \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=0pt]
+        \item[--] Produced internal intern's promotional video by scripting, scheduling, recording, and editing with limited resources
+        \item[--] Analyzed feedback from customer forms and suggested solutions to management to better meet customer satisfaction goals
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+%Projects
+\section{projects}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{File System}, Computer Science Capstone & \hfill \href{https://youtube.com/watch?v= }{\raisebox{-0.05\height}\faYoutube\ Video} \hspace{5px} \href{https://replit.com/@masum-ahmed/File-System}{\raisebox{-0.05\height}\faTerminal\ Demo} \hspace{5px} \href{https://github.com/masumahmed/filesystem}{\raisebox{-0.05\height}\faGithub\ Repo} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=0pt]
+        \item[--] Implemented a mock filesystem using OS design principles in C++
+        \item[--] Stored data using a FAT32 formatted volumed used to represent a storage device by encoding locations in a directory table
+        \item[--] Implemented a simple API for creating, reading, and deleting files
+        \item[--] Grade received: A+
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{Social Media App} & \hfill \href{https://youtube.com/watch?v= }{\raisebox{-0.05\height}\faYoutube\ Video} \hspace{5px} \href{https://replit.com/@masum-ahmed/social-media-app}{\raisebox{-0.05\height}\faTerminal\ Demo} \hspace{5px} \href{https://github.com/masumahmed/social-media-app}{\raisebox{-0.05\height}\faGithub\ Repo} \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=0pt]
+            \item[--] Implemented a featureful fullstack social media app losely based on facebook
+            \item[--] Login functionality, home feed, and profile feed
+            \item[--] PostgreSQL, Express, React, Node
+        \end{itemize}
+        \end{minipage}
+    }
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+    \textbf{Link Locker} & \hfill \href{https://youtu.be/SxkksvAsUzM}{\raisebox{-0.05\height}\faYoutube\ Video} \hspace{5px} \href{https://replit.com/@masum-ahmed/link-locker}{\raisebox{-0.05\height}\faTerminal\ Demo} \hspace{5px} \href{https://github.com/masumahmed/link-locker}{\raisebox{-0.05\height}\faGithub\ Repo} \\[3.75pt]
+    \multicolumn{2}{@{}X@{}}{
+    \begin{minipage}[t]{\linewidth}
+        \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=0pt]
+            \item[--] Implemented a web application that encodes and decodes URLs with a given password 
+            \item[--] NodeJS, and ExpressJS
+        \end{itemize}
+        \end{minipage}
+    }
+\end{tabularx}
+
+\emph{Note: For more detail and a comprehensive list of projects please visit the \href{https://masumahmed.net/projects}{{\raisebox{-0.05\height} projects} }section on Masum's website.}
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+\textbf{CUNY, Hunter College} & Computer Science, BA \hfill 2017 - 2023 \normalsize \\
+\end{tabularx} 
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=0pt]
+        \item[--] Co-Chair of Student Publications (2020 - 2021), President and Treasurer of Student's Comic Publication (2020 - 2022), Editor of Student Comic Publication (2020 - 2023)
+    \end{itemize}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+
+\textbf{Disciplines} &  \normalsize{Fullstack Development, Data Science, Game Development}\\
+\textbf{Computer Languages}  &  \normalsize{HTML, CSS/SCSS, JavaScript/TypeScript, Python, SQL, C/C++, C\#, and GDScript}\\  
+\textbf{Libraries/Frameworks}  &  \normalsize{React, React Native, Express, jQuery, Tailwind, SciPy, SeaBorn, \& Scikit-Learn}\\  
+\textbf{Technologies}  &  \normalsize{Node, Bash, Docker, Git, Postman, JupyterLabs, PostgreSQL, and Godot}\\  
+\textbf{Communications}  &  \normalsize{ \LaTeX, Markdown, Microsoft Office, Photoshop, Illustrator, and InDesign}\\ 
+\textbf{Soft Skills}  &  \normalsize{Documenter,  excellent communication, detailed orientated, and clever under pressure}\\  
+\textbf{Languages}  &  \normalsize{English (native), Bangla (intermediate), Spanish (intermediate)}\\  
+\end{tabularx}
+
+\
+\color{lightgray}\center \small \emph Last modified \today 
+
+\vfill
+
+\end{document}
